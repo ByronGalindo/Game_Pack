@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pacman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <img src="https://www.usco.edu.co/imagen-institucional/ocre/universidad-surcolombiana-50.png">
+  <h1>CURSO DE APLICACIONES MÓVILES 2022-1</h1>
+  <h2>Programa de Ingeniería Electrónica</h2>
+  
+  <div id="shim">shim for font face</div>
+
+  <h1>Pacman</h1>
+
+  <div id="pacman"></div>
+  <script src="js/pacman.js"></script>
+  <script src="js/modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+</body>
+<footer>
+  <h2>CONTACTO</h2>
+      <a href="https://www.facebook.com/byronh.galindo/" target="_blank">
+      <img src="images/fb.png" alt="Facebook" style="width:50px;height:50px;">
+      </a>
+
+      <a href="https://www.google.com/maps/@2.8951346,-75.4384408,16z?hl=es" target="_blank">
+          <img src="images/mp.png" alt="Maps" style="width:50px;height:50px;">
+      </a>
+
+      <a href="https://www.linkedin.com/in/byron-h-galindo-suarez-577062139/" target="_blank">
+          <img src="images/lk.png" alt="Linkedin" style="width:50px;height:50px;">
+      </a>
+      
+      <a href="https://www.instagram.com/el_byron_galindo/?hl=es" target="_blank">
+          <img src="images/descarga.png" alt="Instagram" style="width:50px;height:50px;">
+      </a>
+      <li>
+        <span class="icon"
+        ><i class="fa fa-phone" aria-hidden="true"></i
+        ></span>
+        <a href="tel:3209175418" target="_blank">+57 320 9175418</a>
+    </li>  
+    <li>
+        <span class="icon"
+        ><i class="fa fa-envelope" aria-hidden="true"></i
+        ></span>
+        <a href="mailto:u20171155352@usco.edu.co" target="_blank">u20171155352@usco.edu.co</a>
+    </li>
+  </footer>
+</html>

@@ -1,0 +1,43 @@
+*{
+    background-color: rgb(156, 0, 0);
+    font-family: 'BDCartoonShoutRegular';
+    src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  #pacman {
+    height:450px;
+    width:342px;
+    margin:20px auto;
+  }
+  #shim { 
+    font-family: BDCartoonShoutRegular; 
+    position:absolute;
+    visibility:hidden
+  }
+  h1 {
+    font-family: BDCartoonShoutRegular;
+    text-align:center; }
+
+  body { 
+    width:342px; 
+    margin:0px auto; 
+    font-family:sans-serif; 
+    text-align: center;
+  }
+  a { 
+    text-decoration:none;
+   }
+
+  footer{
+    background-color: rgb(156, 0, 0);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    padding: 10px;
+    margin-top: 300px;
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .left, .right {
+      width: 100%;}}
